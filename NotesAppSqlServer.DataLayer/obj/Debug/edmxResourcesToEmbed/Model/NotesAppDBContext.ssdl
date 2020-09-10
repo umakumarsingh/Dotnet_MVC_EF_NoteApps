@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="NotesAppModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="NotesAppModelStoreContainer">
+    <EntitySet Name="Notes" EntityType="NotesAppModel.Store.Notes" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="Notes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Title" Type="varchar" Nullable="true" MaxLength="255" />
+    <Property Name="Author" Type="varchar" Nullable="true" MaxLength="255" />
+    <Property Name="Description" Type="varchar" Nullable="true" MaxLength="255" />
+    <Property Name="Status" Type="varchar" Nullable="true" MaxLength="255" />
+  </EntityType>
+</Schema>
